@@ -1,4 +1,6 @@
+<% cache @product do %>
 <h1><%= @product.name %></h1>
+<% end %>
 
 <%= render "form", product: @product %>
 <%= link_to "back", products_path %>
