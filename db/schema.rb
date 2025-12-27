@@ -51,6 +51,7 @@ ActiveRecord::Schema[8.1].define(version: 2025_12_27_223606) do
 
   create_table "products", force: :cascade do |t|
     t.datetime "created_at", null: false
+    t.integer "inventory_count", default: 0
     t.string "name"
     t.datetime "updated_at", null: false
   end
